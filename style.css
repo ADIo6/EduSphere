@@ -47,7 +47,7 @@ html{
     border-radius: 20px;
 }
 
-.links_wrap a{
+.links_wrapper a{
     text-decoration: none;
     gap: 2rem;
     margin: 0 1rem;
@@ -56,7 +56,7 @@ html{
     color: var(--dark-color);
     padding: 0.5rem 1rem;
 }
-.links_wrap a:hover{
+.links_wrapper a:hover{
     color: var(--primary-color);
     
 }
@@ -83,7 +83,7 @@ html{
     align-items: center;
     flex-wrap: wrap;
 }
-.buttons button {
+.login {
     margin: 0 0.2rem;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -95,13 +95,240 @@ html{
     cursor: pointer;
     
 }
+.signUp{
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff ;
+}
+
 .buttons button:hover{
     background-color: var(--primary-color);
     color: #fff;
     border: 1px solid var(--primary-color);
 }
-.signUp{
-    background-color: var(--primary-color)!important;
-    color: #fff !important;
-    /* border: 1px solid var(--primary-color)!important; */
+
+/* ---------------------------------------Home Section------------------------------ */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 10rem
 }
+
+.left{
+    margin-right: 5rem;
+    
+}
+.left h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, #000046, #1CB5E0, var(--primary-color));
+    background-clip: text;
+}
+.left p{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.left button{
+    padding: 1rem 2rem;
+}
+
+.right img{
+    width: 21rem;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.drop-shadow{
+    filter:drop-shadow(10px -3px 4px #555);
+    
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem 3rem;
+}
+
+.box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--dark-color);
+    background-color: #c6fdff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 1s ease;
+}
+
+.box i{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* --------------------------Courses Section---------------------------------------- */
+
+.courses_wrapper{
+    margin: 5rem 0;
+    padding: 0 6rem;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+/* inbuilt code for swipper.js */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ----------Our own swipper code------------- */
+  .swiper-slide{
+    padding: 3rem 3.5rem;
+  }
+  .swiper-slide img{
+    height:20rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    color: var(--primary-color)!important;
+  }
+
+  .swiper-pagination-bullet-active{
+    background:var(--primary-color)!important;
+  }
+
+  .overflow{
+    padding: 1rem;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    
+  }
+  /* --------------------------Popular Course-------------------------------------- */
+
+  .popular_wrapper{
+    /* margin: 5rem 0; */
+    padding: 0 6rem;
+  }
+  .card_wrapper{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.card_box{
+    padding: 1rem;
+    border-radius: 2rem;
+    height: 25rem;
+    width: 20rem;
+}
+.card_box:hover{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+transition: all 0.5s ease;
+cursor: pointer;
+}
+  .card_box img{
+    height: 60%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 2rem;
+
+  }
+
+  /* .info{
+    display: grid;
+    gap: 1rem;
+  } */
+   .upper{
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  .upper i, .lower{
+    color: var(--primary-color);
+  }
+
+  .course_name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    position: relative;
+}
+.course_name span{
+    display: inline-block;
+    transition: transform 5s linear;
+    transform: translateX(0);
+}
+
+.course_name:hover span {
+    transform: translateX(-80%);
+}
+.lower{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem;
+  }

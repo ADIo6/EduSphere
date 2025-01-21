@@ -14,6 +14,8 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -23,7 +25,7 @@
             <img src="images/logo1.png" alt="logo">
         </div>
         
-        <div class="links_wrap">
+        <div class="links_wrapper">
             <!-- <ul> -->
              <a href="#">Home</a>  
              <a href="#">Courses</a>  
@@ -39,20 +41,219 @@
                 <button class="login">Login</button>
                 <button class="signUp">Sign Up</button>
             </div>
-            <button class="">Sign Up</button>
         </div>
-        <div class="hamburger_wrap">
+        <div class="hamburger_wrapper">
             <i class="fas fa-bars"></i>
         </div>
 
     </div>
 
-    <!-- Home -->
-     
 
+    <!-- Home -->
+     <section class="home_wrapper">
+
+        <!-- Top -->    
+        <div class="top">
+            <!-- Left Side -->
+            <div class="left">
+                <h1>Quality Education By Any Means Necessary.</h1>
+                <p>Learn Anything, Anytime, Anywhere</p>
+                <button class="signUp">Get Started</button>                
+            </div>
+            <!-- Right Side -->
+            <div class="right">
+                <img class="drop-shadow" src="images/Student1.png" alt="home">
+            </div> 
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom">
+            <div class="wrapper">
+                <div class="box">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <h3>Problem Solving</h3>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-comments"></i>
+                    <h3>Live Chat</h3>
+
+                </div>
+                <div class="box">
+                    <i class="fas fa-book"></i>
+                    <h3>Group Reading</h3>
+            </div>
+                <div class="box">
+                    <i class="fas fa-users"></i>
+                    <h3>10k Courses</h3>
+            </div>
+                <div class="box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Activities</h3>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- courses -->
+     <section class="courses_wrapper">
+        <div class="heading">
+            <div>Choose your favourite course from the top categories</div>
+
+            <div>See All</div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/swipper1.jpg" alt="swipper 1">
+                <div class="overflow ">Design</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/swipper2.jpg" alt="swipper 2">
+                <div class="overflow">Design</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/swipper3.jpg" alt="swipper 3">
+                <div class="overflow">Design</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/swipper4.jpg" alt="swipper 4">
+                <div class="overflow">Programming</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/swipper5.jpg" alt="swipper 5">
+                <div class="overflow">Technology</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/swipper3.jpg" alt="swipper 3">
+                <div class="overflow">Design</div>
+            </div>
+           
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+     </section>
+
+
+     <!-- Most Popular -->
+      <section class="popular_wrapper">
+        <div class="heading">
+            <div>Most Popular Courses</div>
+            <div>See All</div>
+        </div>
+        <div class="card_wrapper">
+            <div class="card_box">
+                <img src="images/java.jpg" alt="popular 1">
+                    <div class="upper">
+                        <div class="course_name">
+                            <span> Java</span>
+                        </div>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="lower">
+                        <div class="duration">5 weeks</div>
+                        <!-- <div class="rating">4.5</div> -->
+                    </div>
+            </div>
+            <div class="card_box">
+                <img src="images/js.jpg" alt="popular 2">
+                <div class="upper">
+                    <div class="course_name">
+                        <span> JavaScript</span>
+                    </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="lower">
+                    <div class="duration">5 weeks</div>
+                    <!-- <div class="rating">4.5</div> -->
+                </div>
+            </div>
+            <div class="card_box">
+                <img src="images/DSA.jpg" alt="popular 3">
+                <div class="upper">
+                    <div class="course_name">
+                        <span> DSA with C/C++</span>
+                    </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="lower">
+                    <div class="duration">5 weeks</div>
+                    <!-- <div class="rating">4.5</div> -->
+                </div>
+            </div>
+            <div class="card_box">
+                <img src="images/nextjs.jpg" alt="popular 4">
+                <div class="upper">
+                    <div class="course_name">
+                        <span> Next.js</span>
+                    </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="lower">
+                    <div class="duration">4 weeks</div>
+                    <!-- <div class="rating">4.5</div> -->
+                </div>
+            </div>
+            <div class="card_box">
+                <img src="images/react.jpg" alt="popular 5">
+                <div class="upper">
+                    <div class="course_name">
+                        <span>React a Css Framework</span>
+                    </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="lower">
+                    <div class="duration">3 weeks</div>
+                    <!-- <div class="rating">4.5</div> -->
+                </div>
+            </div>
+            <div class="card_box">
+                <img src="images/nodejs.jpg" alt="popular 6">
+                <div class="upper">
+                    <div class="course_name">
+                        <span>Node.js</span>
+                    </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="lower">
+                    <div class="duration">6 weeks</div>
+                    <!-- <div class="rating">4.5</div> -->
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Instructor -->
+        <section class="instructor_wrapper">
+            <div class="heading">
+                <div>Top Instructors</div>
+                <div>See All</div>
+            </div>
+            <div class="instructor_card_wrapper">
+                <div class="instructor
     <!-- Footer -->
 
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
 
 </body>
 </html>
