@@ -9,7 +9,7 @@
 /* Adding variables at the root level of our stylesheet */
 
 :root{
-    --primary-color:#0975b4;
+    --primary-color:#007BFF;
     --border: #E4FFFF;
     --dark-color:#151931;
 }
@@ -332,3 +332,81 @@ cursor: pointer;
     font-weight: 500;
     margin: 1rem;
   }
+
+
+
+
+
+    /* --------------------------Instructor Section-------------------------------------- */
+
+    .instructor_wrapper{
+        margin: 5rem 0;
+        padding: 0 6rem;
+    }
+
+    .instructors{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        padding: 2rem 0;
+    }
+    
+    .instructor{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+        width: 20rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 2rem;
+        cursor:pointer;
+        border: 2px solid var(--primary-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    .instructor:hover{
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+        
+    }
+    .instructor_img{
+        height: 7rem;
+        width: 7rem;
+        
+    }
+    .instructor_img img{
+        
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        object-fit: fill;
+        clip-path: circle(50%);
+    }
+
+    .intro{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro span:first-child{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+    .intro span:last-child{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
+    .quote{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333333;
+        text-align: center;
+        
+    }
