@@ -31,6 +31,10 @@ html{
     justify-content: space-between;
     align-items: center;
     margin: 0 2rem;
+    position: fixed;
+    background: #fff;
+    z-index: 9;
+    width: 90%;
 }
 
 .logo_wrapper{
@@ -119,7 +123,8 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:3rem 10rem
+    padding:3rem 10rem;
+    padding-top: 0;
 }
 
 .left{
@@ -170,7 +175,7 @@ html{
     align-items: center;
     gap: 1rem;
     margin: 0 1rem;
-    width: 30%;
+    
     padding: 1rem;
     border-radius: 10px;
     color: var(--dark-color);
@@ -197,7 +202,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20rem;
+    /* gap: 20rem; */
     font-size: 1.5rem;
     font-weight: bold;
     color: #333333;
@@ -345,14 +350,12 @@ cursor: pointer;
     }
 
     .instructors{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         gap: 5rem;
         padding: 2rem 0;
     }
     
     .instructor{
-        justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -409,4 +412,245 @@ cursor: pointer;
         color: #333333;
         text-align: center;
         
+    }
+
+
+
+    /* --------------------------Contact Us Section-------------------------------------- */
+
+    .contact_wrapper{
+        margin: 5rem 0;
+        padding: 0 6rem;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .contact_box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        height: 25rem;
+        width: 20rem;
+        background-color: #fff;
+        
+    }
+    .us{
+        color: var(--primary-color);
+    }
+    .cd{
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contact_box i{
+        margin:2rem 1rem;
+        font-size: 10rem;
+        color: var(--dark-color)
+    }
+
+    .contact_details span{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+    .contact_details a{
+        font-size: 1.2rem;
+        font-weight: 470;
+        color: var(--dark-color);
+    }
+
+    .user_details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;   
+    }
+    .input_wrap1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:10rem;
+    }
+    .input_wrap1 input{
+        /* accent-color: var(--primary-color); */
+        caret-color: var(--primary-color);
+        border-image: linear-gradient(to right, #000046, #1CB5E0) 1;
+        outline: none;
+        font-size: 1.3rem;
+        height: 3rem;
+        margin: 2rem 0;
+        padding: 10px;
+    }
+    .input_wrap2 input{
+        /* accent-color: var(--primary-color); */
+        border-image: linear-gradient(to right, #000046, #1CB5E0) 1;
+        caret-color: var(--primary-color);
+        outline: none;
+        font-size: 1.3rem;
+        height: 3rem;
+        margin: 2rem 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input_wrap2 textarea{
+        /* accent-color: var(--primary-color); */
+        border-image-slice: 3;
+        border-image: linear-gradient(to right, #000046, #1CB5E0) 1;
+        caret-color: var(--primary-color);
+        outline: none;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 10px;
+        min-height: 6rem;
+        border-width: 2px;
+        font-family: "Source Sans 3", serif;
+    }
+
+    .submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+
+
+
+    /* --------------------------Media Query mobile nav Section-------------------------------------- */
+
+    .mobile_nav{
+        opacity:0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        position: relative;
+    }   
+
+    .hidden{
+        display:none;
+
+    }
+    .transform{
+        transform: translateX(-100%);
+    }
+
+    .hamburger_icon{
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .mobile_nav_links{
+        position:absolute;
+        top: 0;
+        left: -2rem;
+        height: 70vh;
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 1s ease;
+        padding: 2rem 0;
+    }
+
+
+    .mobile_nav_links a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .cross_icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2rem;
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    .buttons .mobile{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+
+
+
+
+    /* --------------------------Media Query tablet Section-------------------------------------- */
+    @media only screen and (max-width: 1300px){
+        .navbar_wrapper{
+            display:none;
+        }
+        .mobile_nav{
+            opacity: 100;
+        }
+        /*---------------------------- Home------------------------- */
+        .top{
+            padding: 3rem 2rem;
+        }
+
+        .right img{
+            height: 27rem;
+            width: 16rem;
+        }
+        .wrapper{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        /*---------------------------- courses------------------------- */
+        .courses_wrapper{
+            padding: 0 2rem;
+        }
+        .swiper-slide{
+            padding: 0 2.4rem;
+        }
+
+        /* --------------------------------Popular courses-------------------------- */
+
+        .popular_wrapper{
+            padding: 0 2rem;
+        }
+
+        .card_box {
+            height: 18rem;
+            width: 13rem;
+        }
+
+        .card_wrapper{
+            column-gap: 2rem;
+            row-gap: 4rem;
+        }
+        /* --------------------------------Instructor-------------------------- */
+
+        .instructor_wrapper{
+            padding: 4rem 2rem;
+        }
+
+        /* -------------------------------Contact----------------------------- */
+
+        .contact{
+            padding: 2rem 2rem;
+        }
     }
